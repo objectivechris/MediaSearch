@@ -43,11 +43,6 @@ class SearchViewController: UIViewController {
         searchBar.becomeFirstResponder()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         performSearch()
     }
@@ -61,8 +56,7 @@ class SearchViewController: UIViewController {
         default: entityName = ""
         }
         
-        let escapedSearchText = searchText.addingPercentEncoding(
-            withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+        let escapedSearchText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         
         let urlString = String(format: "https://itunes.apple.com/search?term=%@&limit=200&entity=%@", escapedSearchText, entityName)
         
@@ -285,14 +279,10 @@ extension SearchViewController: UITableViewDataSource {
             return cell
             
         } else if searchResults.count == 0 {
-            return tableView.dequeueReusableCell(
-                withIdentifier: TableViewCellIdentifiers.nothingFoundCell,
-                for: indexPath)
+            return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifiers.nothingFoundCell, for: indexPath)
             
         } else {
-            let cell = tableView.dequeueReusableCell(
-                withIdentifier: TableViewCellIdentifiers.searchResultCell,
-                for: indexPath) as! SearchResultCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifiers.searchResultCell, for: indexPath) as! SearchResultCell
             
             let searchResult = searchResults[indexPath.row]
             cell.configure(for: searchResult)

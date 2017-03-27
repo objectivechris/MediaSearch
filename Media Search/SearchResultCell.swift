@@ -19,8 +19,7 @@ class SearchResultCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         let selectedView = UIView(frame: CGRect.zero)
-        selectedView.backgroundColor = UIColor(red: 20/255, green: 160/255,
-                                               blue: 160/255, alpha: 0.5)
+        selectedView.backgroundColor = UIColor(red: 20/255, green: 160/255, blue: 160/255, alpha: 0.5)
         selectedBackgroundView = selectedView
     }
     
@@ -36,8 +35,7 @@ class SearchResultCell: UITableViewCell {
         if searchResult.artistName.isEmpty {
             artistNameLabel.text = "Unknown"
         } else {
-            artistNameLabel.text = String(format: "%@ (%@)",
-                                          searchResult.artistName, kindForDisplay(searchResult.kind))
+            artistNameLabel.text = String(format: "%@ (%@)", searchResult.artistName, kindForDisplay(searchResult.kind))
         }
         
         artworkImageView.image = UIImage(named: "Placeholder")
