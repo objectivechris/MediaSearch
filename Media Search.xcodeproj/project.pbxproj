@@ -16,6 +16,7 @@
 		D07FBC401E877F6A00F0DED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FBC3E1E877F6A00F0DED2 /* Main.storyboard */; };
 		D07FBC421E877F6A00F0DED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07FBC411E877F6A00F0DED2 /* Assets.xcassets */; };
 		D07FBC451E877F6A00F0DED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FBC431E877F6A00F0DED2 /* LaunchScreen.storyboard */; };
+		D0909B8B1E89701600386568 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0909B8A1E89701500386568 /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D07FBC411E877F6A00F0DED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07FBC441E877F6A00F0DED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07FBC461E877F6A00F0DED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0909B8A1E89701500386568 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D07FBC3E1E877F6A00F0DED2 /* Main.storyboard */,
 				D055D9091E88A63300F541B2 /* SearchResultCell.xib */,
 				D055D90D1E88AAF100F541B2 /* NothingFoundCell.xib */,
+				D0909B8A1E89701500386568 /* LoadingCell.xib */,
 				D07FBC411E877F6A00F0DED2 /* Assets.xcassets */,
 				D07FBC431E877F6A00F0DED2 /* LaunchScreen.storyboard */,
 				D07FBC461E877F6A00F0DED2 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				D07FBC451E877F6A00F0DED2 /* LaunchScreen.storyboard in Resources */,
 				D07FBC421E877F6A00F0DED2 /* Assets.xcassets in Resources */,
+				D0909B8B1E89701600386568 /* LoadingCell.xib in Resources */,
 				D055D90A1E88A63300F541B2 /* SearchResultCell.xib in Resources */,
 				D055D90E1E88AAF100F541B2 /* NothingFoundCell.xib in Resources */,
 				D07FBC401E877F6A00F0DED2 /* Main.storyboard in Resources */,
