@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D055D90A1E88A63300F541B2 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D055D9091E88A63300F541B2 /* SearchResultCell.xib */; };
+		D055D90C1E88A94400F541B2 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D055D90B1E88A94400F541B2 /* SearchResultCell.swift */; };
+		D055D90E1E88AAF100F541B2 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D055D90D1E88AAF100F541B2 /* NothingFoundCell.xib */; };
+		D07381F61E87875A00F3B7EA /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07381F51E87875A00F3B7EA /* SearchResult.swift */; };
 		D07FBC3B1E877F6A00F0DED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FBC3A1E877F6A00F0DED2 /* AppDelegate.swift */; };
 		D07FBC3D1E877F6A00F0DED2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FBC3C1E877F6A00F0DED2 /* SearchViewController.swift */; };
 		D07FBC401E877F6A00F0DED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FBC3E1E877F6A00F0DED2 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D055D9091E88A63300F541B2 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		D055D90B1E88A94400F541B2 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		D055D90D1E88AAF100F541B2 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		D07381F51E87875A00F3B7EA /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		D07FBC371E877F6A00F0DED2 /* Media Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Media Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07FBC3A1E877F6A00F0DED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D07FBC3C1E877F6A00F0DED2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +64,11 @@
 			children = (
 				D07FBC3A1E877F6A00F0DED2 /* AppDelegate.swift */,
 				D07FBC3C1E877F6A00F0DED2 /* SearchViewController.swift */,
+				D07381F51E87875A00F3B7EA /* SearchResult.swift */,
+				D055D90B1E88A94400F541B2 /* SearchResultCell.swift */,
 				D07FBC3E1E877F6A00F0DED2 /* Main.storyboard */,
+				D055D9091E88A63300F541B2 /* SearchResultCell.xib */,
+				D055D90D1E88AAF100F541B2 /* NothingFoundCell.xib */,
 				D07FBC411E877F6A00F0DED2 /* Assets.xcassets */,
 				D07FBC431E877F6A00F0DED2 /* LaunchScreen.storyboard */,
 				D07FBC461E877F6A00F0DED2 /* Info.plist */,
@@ -126,6 +138,8 @@
 			files = (
 				D07FBC451E877F6A00F0DED2 /* LaunchScreen.storyboard in Resources */,
 				D07FBC421E877F6A00F0DED2 /* Assets.xcassets in Resources */,
+				D055D90A1E88A63300F541B2 /* SearchResultCell.xib in Resources */,
+				D055D90E1E88AAF100F541B2 /* NothingFoundCell.xib in Resources */,
 				D07FBC401E877F6A00F0DED2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07FBC3D1E877F6A00F0DED2 /* SearchViewController.swift in Sources */,
+				D07381F61E87875A00F3B7EA /* SearchResult.swift in Sources */,
+				D055D90C1E88A94400F541B2 /* SearchResultCell.swift in Sources */,
 				D07FBC3B1E877F6A00F0DED2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +318,7 @@
 				D07FBC4B1E877F6A00F0DED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
