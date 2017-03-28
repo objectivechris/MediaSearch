@@ -204,6 +204,10 @@ class SearchViewController: UIViewController {
             detailViewController.searchResult = searchResult
         }
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 extension SearchViewController: UISearchBarDelegate {

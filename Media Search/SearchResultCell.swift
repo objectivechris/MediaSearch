@@ -19,7 +19,7 @@ class SearchResultCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         let selectedView = UIView(frame: CGRect.zero)
-        selectedView.backgroundColor = UIColor(red: 20/255, green: 160/255, blue: 160/255, alpha: 0.5)
+        selectedView.backgroundColor = UIColor(red: 246/255, green: 36/255, blue: 89/255, alpha: 0.5)
         selectedBackgroundView = selectedView
     }
     
