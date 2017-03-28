@@ -9,6 +9,7 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -56,8 +57,7 @@ class SearchViewController: UIViewController {
         default: entityName = ""
         }
         
-        let escapedSearchText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
-        
+        let escapedSearchText = searchText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         let urlString = String(format: "https://itunes.apple.com/search?term=%@&limit=200&entity=%@", escapedSearchText, entityName)
         
         let url = URL(string: urlString)
@@ -95,8 +95,7 @@ class SearchViewController: UIViewController {
                         searchResult = parse(audiobook: resultDict)
                     case "software":
                         searchResult = parse(software: resultDict)
-                    default:
-                        break
+                    default: break
                     }
                 } else if let kind = resultDict["kind"] as? String, kind == "ebook" {
                     searchResult = parse(ebook: resultDict)
@@ -196,6 +195,15 @@ class SearchViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetail" {
+            let detailViewController = segue.destination as! DetailViewController
+            let indexPath = sender as! IndexPath
+            let searchResult = searchResults[indexPath.row]
+            detailViewController.searchResult = searchResult
+        }
+    }
 }
 
 extension SearchViewController: UISearchBarDelegate {
@@ -251,6 +259,14 @@ extension SearchViewController: UISearchBarDelegate {
         }
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.characters.count == 0 {
+            hasSearched = false
+            searchResults.removeAll()
+            tableView.reloadData()
+        }
+    }
+    
     func position(for bar: UIBarPositioning) -> UIBarPosition {
         return .topAttached
     }
@@ -294,6 +310,7 @@ extension SearchViewController: UITableViewDataSource {
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "ShowDetail", sender: indexPath)
     }
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
