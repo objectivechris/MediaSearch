@@ -16,6 +16,7 @@
 		D07FBC401E877F6A00F0DED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FBC3E1E877F6A00F0DED2 /* Main.storyboard */; };
 		D07FBC421E877F6A00F0DED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07FBC411E877F6A00F0DED2 /* Assets.xcassets */; };
 		D07FBC451E877F6A00F0DED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FBC431E877F6A00F0DED2 /* LaunchScreen.storyboard */; };
+		D080C82F1E8B3C390039B557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C82E1E8B3C390039B557 /* ViewController.swift */; };
 		D0909B8B1E89701600386568 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0909B8A1E89701500386568 /* LoadingCell.xib */; };
 		D0909B8D1E89789E00386568 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0909B8C1E89789E00386568 /* UIImageView+DownloadImage.swift */; };
 		D094F3E21E8A174A00616038 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094F3E11E8A174A00616038 /* DetailViewController.swift */; };
@@ -38,6 +39,7 @@
 		D07FBC411E877F6A00F0DED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07FBC441E877F6A00F0DED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07FBC461E877F6A00F0DED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D080C82E1E8B3C390039B557 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0909B8A1E89701500386568 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		D0909B8C1E89789E00386568 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		D094F3E11E8A174A00616038 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				D0909B8A1E89701500386568 /* LoadingCell.xib */,
 				D07FBC411E877F6A00F0DED2 /* Assets.xcassets */,
 				D07FBC431E877F6A00F0DED2 /* LaunchScreen.storyboard */,
+				D080C82E1E8B3C390039B557 /* ViewController.swift */,
 				D07FBC461E877F6A00F0DED2 /* Info.plist */,
 			);
 			path = "Media Search";
@@ -186,6 +189,7 @@
 				D07FBC3B1E877F6A00F0DED2 /* AppDelegate.swift in Sources */,
 				D094F3E61E8A236F00616038 /* GradientView.swift in Sources */,
 				D0909B8D1E89789E00386568 /* UIImageView+DownloadImage.swift in Sources */,
+				D080C82F1E8B3C390039B557 /* ViewController.swift in Sources */,
 				D094F3EA1E8A254D00616038 /* SlideOutAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
